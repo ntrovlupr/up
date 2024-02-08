@@ -27,15 +27,6 @@
   --clr-primary-450: hsla(215, 85%, 54%, 0.736);
   --clr-primary-475: hsla(67, 39%, 91%, 0.335);
 
-/* 
-  --clr-primary-395: hsla(117, 82%, 78%, 0.96);
-  --clr-primary-400: hsla(117, 68%, 47%, 0.96);
-  --clr-primary-425: hsla(117, 73%, 32%, 0.96);
-  --clr-primary-450: hsla(131, 91%, 18%, 0.866);
-
-  test color ffb703
-*/
-
   --clr-primary-500: hsla(53, 4%, 48%, 0.997);
   --clr-primary-525: hsl(48, 10%, 10%);
   --clr-primary-550: hsl(239, 52%, 22%);
@@ -93,6 +84,10 @@ blockquote,
 dl,
 dd {
   margin: 0;
+}
+
+ul {
+  list-style-type: none;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -176,7 +171,8 @@ h3 {
   line-height: 1.1;
 }
 
-p {
+p,
+ul {
   letter-spacing: 3px;
   margin-bottom: 1em;
   font-weight: var(--fw-400);
@@ -241,7 +237,7 @@ section,
   flex-wrap: wrap;
   gap: var(--gap, 1em);
 }
-
+    
 .flex-end {
   justify-content: flex-end;
 }
@@ -314,6 +310,10 @@ blockquote::after {
   border: 1px solid #c9c5c5;
 }
 
+.font-lrg {
+  font-size: 1.5rem;
+}
+
 .title-bkgd-clr {
   background-color: rgba(244, 255, 255, 0.777);
   padding: .3em;
@@ -332,6 +332,9 @@ blockquote::after {
   text-align: center;
 }
 
+.text-left {
+  text-align: left;     
+}
 /* //////////////////
   padding classes
   ////////////////// */
@@ -593,6 +596,7 @@ span .logo-subtitle {
   .hero > div {
     grid-auto-flow: column;
     padding-top: 0em;
+    grid-gap: 1em;
   }
 
   .hero h1 {
@@ -602,7 +606,7 @@ span .logo-subtitle {
   }
 
   .hero__content {
-    padding: 0 2em; 
+    padding: 0 1em; 
     text-align: right;  
   }
 
@@ -632,7 +636,6 @@ span .logo-subtitle {
     }
 
     .hero__content {
-      padding: 0 .8em 0 4.3em;
       text-align: right;
       
      }
