@@ -339,6 +339,10 @@ blockquote::after {
   padding classes
   ////////////////// */
 
+ul {
+  padding: 0;
+}
+
 .t-padding-sml {
   padding-top: .5em;
 }
@@ -689,6 +693,7 @@ span .logo-subtitle {
 
 .accent-font {
   font-family: var(--ff-accent-font);
+  font-style: italic;
   letter-spacing: 3px;
 }
 
